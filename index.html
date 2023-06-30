@@ -52,6 +52,10 @@
       background-color: #ffbd2f;
     }
     
+    .blog {
+      display: none ;
+    }
+    
      .email {
       display: none;
     }
@@ -95,7 +99,7 @@
     }
     
     .youtube {
-      display: none;
+      display: ;
     }
 
     .pinterest:hover {
@@ -128,6 +132,12 @@
   <body>
 
     <div class="wrapper">
+      
+      <!-- Start youtube Icon -->
+      <div id="youtube" onclick="navigate(this.id)" class="social youtube">
+        <span class="icon"><i class="fab fa-youtube"></i></span>
+      </div>
+      <!-- End youtube Icon -->
 
       <!-- Start blog Icon -->
       <div id="blog" onclick="navigate(this.id)" class="social blog">
@@ -155,11 +165,7 @@
       <!-- End instagram Icon -->
 
 
-      <!-- Start youtube Icon -->
-      <div id="youtube" onclick="navigate(this.id)" class="social youtube">
-        <span class="icon"><i class="fab fa-youtube"></i></span>
-      </div>
-      <!-- End youtube Icon -->
+      
 
 
       <!-- Start telegram Icon -->
@@ -204,10 +210,10 @@
           window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
         }
         else if (id === "youtube") {
-          window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
+          window.open("https://www.youtube.com/@Kin_zen/featured", '_blank').focus(); //Add the url to your youtube account
         }
         else if (id === "pinterest") {
-          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
+    window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
